@@ -1,0 +1,114 @@
+p {
+font-size: 19px;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+font-family: georgia;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+html, body, #map {
+    height: 100%;
+}
+
+body { 
+padding-top: 0px; 
+}
+
+.date {
+text-align:center;
+}
+
+
+/**Top View of posts**/
+.topview {
+max-height: 750px;
+overflow: hidden;
+}
+
+.fitvid {
+width:100%;
+background-color: black;
+}
+
+.mobimg {
+display: none;
+}
+
+.toptext {
+margin-top: 10px;
+position: absolute;
+text-align: center;
+background: transparent;
+color: white;
+top: 5px;
+}
+
+@media (max-width: 768px) {
+.fitvid {
+display:none;
+}
+
+.mobimg {
+height: 500px;
+display: inline;
+}
+}
+
+
+/**Virtual tour containers**/
+
+.vtour {
+height: 250px;
+}
+
+@media (min-width: 480px) {
+.vtour {
+height: 300px;
+}
+}
+
+@media (min-width: 768px) {
+.vtour {
+height: 400px;
+}
+}
+
+@media (min-width: 992px) {
+.vtour {
+height: 500px;
+}
+}
+
+@media (min-width: 1200px) {
+.vtour {
+height: 600px;
+}
+}
+
+/**Map page**/
+#map {
+height:100%;
+}
+
+.leaflet-top .leaflet-control {
+  margin-top:60px;
+}
+
+/**NAVBAR**/
+.navbar-inner {
+background-color: rgba(0, 0, 0, 0.6);
+}
+.navbar-inner container {
+background-color: rgba(0, 0, 0, 0.6);
+}
+.navbar {
+background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-inverse .navbar-brand { color: #D4D4D4}
+.navbar-inverse .navbar-nav>li>a { color: #D4D4D4}
+.navbar-nav>.open>a:focus { color: #D4D4D4}
