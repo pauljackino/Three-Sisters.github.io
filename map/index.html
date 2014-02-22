@@ -1,0 +1,24 @@
+---
+layout: page
+---
+<div id="map"></div><!-- map -->
+
+<!-- Leaflet maps -->
+	<script src="{{ site.baseurl }}/plugins/leaflet/leaflet.js"></script>
+<!-- Leaflet Awesome icons -->
+	<script src="{{ site.baseurl }}/plugins/leaflet-awesome/leaflet.awesome-markers.min.js"></script>
+	
+<!-- map page settings -->
+	<script>
+	var map = new L.Map('map', {
+    center: new L.LatLng(42.441, -79.179),
+    zoom: 10,
+    layers: new L.TileLayer('https://a.tiles.mapbox.com/v3/ngunner.gbig1f0g/{z}/{x}/{y}.png')
+});
+
+// Add markers from posts to map
+{% for post in site.posts limit: 10 %}
+	var marker = L.marker([{{ post.lat }}, {{ post.long }}],{icon: L.AwesomeMarkers.icon({icon: '{{ post.icon }}', markerColor: '{{ post.markerColor }}', prefix: 'fa', iconColor: '{{ post.iconColor }}'}) }).addTo(map);
+	marker.bindPopup('<p style="font-family:helvetica;"><a href="{{ site.baseurl }}{{ post.url }}" class="speciallink">{{ post.title }}</a></p>');
+{% endfor %}
+	</script>

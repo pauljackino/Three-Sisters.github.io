@@ -1,0 +1,46 @@
+permalink: /:categories/:year/:month/:day/:title 
+
+pygments: true
+
+title : Title of Site
+tagline: Tagline of Site
+author :
+  name : Site name
+  email : ngunner@canopymaps.com
+  github : canopymaps
+  twitter : canopymaps
+  web : http://www.canopymaps.com
+
+production_url : http://canopymaps.github.io/site
+
+version : 0.1.0
+
+baseurl : http://canopymaps.github.io/site
+
+ 
+comments :
+  provider : disqus
+  disqus :
+    short_name : canopymaps
+   
+   
+analytics :
+  provider : google 
+  google : 
+    tracking_id : 'UA-xxxxxxxx-x'
+
+  
+authors:
+  ngunner:
+    name: Nicholas Gunner
+    display_name: Nicholas Gunner
+    bio: New Media Manager at SUNY Fredonia
+    gravatar: http://www.gravatar.com/avatar/a85d870dce3cc177b6b0016a1ef4c200.png
+    email: gunner@fredonia.edu
+    web: http://www.nicholasgunner.com
+    twitter: nicholas_gunner
+    github: ngunner
+   
+
+  
+timezone : America/New_York

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="topview">
+	<div class="fitvid">
+		{% if page.autoVideo %}{{ page.autoVideo }}{% else page.featuredImage %}<img class="img-responsive" src="{{ page.featuredImage }}">{% endif %}
+	</div><!-- fitvid -->
+	
+		<img class="mobimg" src="{{ page.featuredImage }}">
+	
+	<div class="col-md-6 col-md-offset-3 jumbotron toptext">
+				<h1>{{ page.title }}</h1>
+				{% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+				<a href="#siteauthor"><span class="glyphicon glyphicon-chevron-down"></span></a>
+	</div><!-- col-md-4 col-md-offset-4 jumbotron -->
+</div><!-- .topview --><a name="siteauthor"></a>
+<div class="container">
+{% assign author = site.authors[page.author] %}
+<div class="row post-full">
+	<div class="col-md-12">
+    	<div class="date">
+      		<h3><small><span>{{ page.date | date: "%B %-d" }}, {{ page.date | date: "%Y" }}</span>{% if author %}   <img style="width:35px; height:35px;" src="{{author.gravatar}}" class="img-circle">   <a href="http://www.twitter.com/{{author.twitter}}">{{ author.display_name }}{% endif %}</a></small></h3>
+    	</div><!-- .date -->
+		{{ content }}
+	</div><!-- .col-md-12 -->
+</div><!-- .container -->

@@ -1,0 +1,21 @@
+<hr>
+<h2 class="text-center">Look around<br><small>Click the panels below</small></h2>
+<div class="panel-group" id="accordion">
+{% for tour in page.tours %}
+  <div class="panel panel-info">
+    	<div class="panel-heading">
+    		<a data-toggle="collapse" data-parent="#accordion" href="#{{tour.title | replace: ' ', '-'}}" class="text-info">
+      		<h3 class="text-center"><span class="fa fa-eye"></span> {{ tour.title }}</h3>
+      		</a>
+    	</div><!-- panel-heading -->
+    <div id="{{tour.title | replace: ' ', '-'}}" class="panel-collapse collapse">
+      <div class="panel-body">
+      	<div class="vtour">
+			<iframe width="100%" height="100%" src="{{ tour.url }}" frameBorder="0">If you see nothing here, your browser may be out of date.</iframe>
+     	</div><!-- vtour -->
+      </div><!-- panel-body -->
+    </div><!-- panel-collapse collapse -->
+  </div><!-- panel panel-info -->
+{% endfor %}
+</div><!-- panel-group -->
+<hr>

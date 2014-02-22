@@ -1,2 +1,1 @@
-Three-Sisters.github.io
-=======================
+# Canopy Maps Project:
