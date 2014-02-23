@@ -1,6 +1,6 @@
 ---
 published: true
-layout: farm
+layout: post
 title: Someday Maybe Farms
 description:
 featuredImage: 
