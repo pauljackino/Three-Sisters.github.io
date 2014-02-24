@@ -1,1 +1,2 @@
-# Canopy Maps Project:
+# Three Sisters: 
+Marketting website and blog

@@ -40,7 +40,15 @@ authors:
     web: http://www.nicholasgunner.com
     twitter: nicholas_gunner
     github: ngunner
-   
-
+  pjackino:
+    name: Paul Jackino
+    display_name: Paul Jackino
+    bio: Three Ststers farmer relations, operations manager, and food specialist.
+    gravatar:
+    email:
+    web:
+    twitter:
+    github:
+    
   
 timezone : America/New_York
